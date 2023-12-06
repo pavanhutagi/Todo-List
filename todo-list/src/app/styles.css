@@ -43,6 +43,25 @@
   border-radius: 25px;
   height: 100px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.check {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.description {
+  font-size: 20pt;
+  flex-grow: 1;
+}
+
+.remove {
 }
 
 .side-container {
@@ -56,7 +75,7 @@
   /* border: solid 2px rgb(228, 0, 253); */
   margin-bottom: 25px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .profile {
@@ -76,4 +95,28 @@
   height: 100%;
   border-radius: 25px;
   margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.details-container {
+  flex-grow: 1;
+}
+
+.save-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-button {
+  background-color: #4285f4;
+  width: 130px;
+  height: 60px;
+  border-radius: 25px;
+  color: white;
+  font-size: 20pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
