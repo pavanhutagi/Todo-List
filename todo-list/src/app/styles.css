@@ -1,44 +1,79 @@
 .todo-list-app-container {
-  border: solid 2px rgb(255, 255, 255);
+  /* border: solid 2px rgb(255, 255, 255); */
   height: 100%;
   display: flex;
 }
 
 .main-container {
-  border: solid 2px rgb(253, 219, 0);
+  /* border: solid 2px rgb(253, 219, 0); */
   width: 60%;
   display: flex;
   flex-direction: column;
 }
 
 .main-tools-container {
-  border: solid 2px rgb(0, 202, 253);
+  /* border: solid 2px rgb(0, 202, 253); */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.date-picker {
+  background-color: #d9d9d9;
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.new-task {
+  background-color: #d9d9d9;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
 }
 
 .todo-list-container {
-  border: solid 2px rgb(34, 253, 0);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  /* border: solid 2px rgb(34, 253, 0); */
+  overflow-y: auto;
 }
 
 .todo-list-card {
   background-color: #fdaea9;
   border-radius: 25px;
   height: 100px;
+  margin-bottom: 10px;
 }
 
 .side-container {
-  border: solid 2px rgb(253, 0, 0);
+  /* border: solid 2px rgb(253, 0, 0); */
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
 .side-tools-container {
-  border: solid 2px rgb(228, 0, 253);
+  /* border: solid 2px rgb(228, 0, 253); */
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: end;
+}
+
+.profile {
+  background-color: #d9d9d9;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
 }
 
 .todo-list-details-container {
-  border: solid 2px rgb(253, 148, 0);
+  /* border: solid 2px rgb(253, 148, 0); */
+  height: 100%;
+}
+
+.todo-list-details {
+  background-color: #f0ca86;
+  height: 100%;
+  border-radius: 25px;
+  margin-left: 25px;
 }
