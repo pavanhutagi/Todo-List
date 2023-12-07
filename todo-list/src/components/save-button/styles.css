@@ -1,0 +1,22 @@
+.save-button {
+  background-color: #4285f4;
+  color: white;
+  width: 130px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.save-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.save-text {
+  margin-left: 10px;
+  font-size: 16pt;
+}

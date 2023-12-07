@@ -1,0 +1,10 @@
+.profile {
+  background-color: #d9d9d9;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

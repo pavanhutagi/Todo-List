@@ -1,103 +1,37 @@
 .todo-list-app-container {
-  /* border: solid 2px rgb(255, 255, 255); */
   height: 100%;
   display: flex;
 }
 
 .main-container {
-  /* border: solid 2px rgb(253, 219, 0); */
   width: 60%;
   display: flex;
   flex-direction: column;
 }
 
 .main-tools-container {
-  /* border: solid 2px rgb(0, 202, 253); */
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.new-task-button {
-  background-color: #d9d9d9;
-  width: 180px;
-  height: 60px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  font-size: 14pt;
-  cursor: pointer;
-}
-
-.new-task-icon {
-  width: 50px;
-  height: 50px;
-  margin-left: 5px;
-  color: #4285f4;
-}
-
-.new-task-text {
-  margin-left: 10px;
-}
-
 .todo-list-container {
-  /* border: solid 2px rgb(34, 253, 0); */
   overflow-y: auto;
 }
 
-.todo-list-card {
-  background-color: #fdaea9;
-  border-radius: 25px;
-  height: 100px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.check {
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.description {
-  font-size: 20pt;
-  flex-grow: 1;
-}
-
-.remove {
-}
-
 .side-container {
-  /* border: solid 2px rgb(253, 0, 0); */
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
 .side-tools-container {
-  /* border: solid 2px rgb(228, 0, 253); */
   margin-bottom: 25px;
   display: flex;
   justify-content: flex-end;
 }
 
-.profile {
-  background-color: #d9d9d9;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
 .todo-list-details-container {
-  /* border: solid 2px rgb(253, 148, 0); */
   height: 100%;
 }
 
@@ -118,16 +52,4 @@
 .save-button-container {
   display: flex;
   justify-content: flex-end;
-}
-
-.save-button {
-  background-color: #4285f4;
-  width: 130px;
-  height: 60px;
-  border-radius: 25px;
-  color: white;
-  font-size: 20pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
