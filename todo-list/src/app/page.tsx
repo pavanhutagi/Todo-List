@@ -1,5 +1,6 @@
 "use client";
 
+import Logo from "@/components/logo/logo";
 import "./styles.css";
 
 import DatePicker from "@/components/date-picker/date-picker";
@@ -14,8 +15,8 @@ export default function Home() {
       <div className="todo-list-app-container">
         <div className="main-container">
           <div className="main-tools-container">
+            <Logo />
             <DatePicker />
-            <NewTaskButton />
           </div>
 
           <div className="todo-list-container">
