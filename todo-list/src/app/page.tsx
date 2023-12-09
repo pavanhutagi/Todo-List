@@ -1,13 +1,13 @@
 "use client";
 
-import Logo from "@/components/logo/logo";
 import "./styles.css";
 
 import DatePicker from "@/components/date-picker/date-picker";
-import NewTaskButton from "@/components/new-task-button/new-task-button";
 import Profile from "@/components/profile/profile";
-import SaveButton from "@/components/save-button/save-button";
-import TodoCard from "@/components/todo-card/TodoCard";
+import TodoCard from "@/components/todo-card/todo-card";
+import Logo from "@/components/todo-logo/todo-logo";
+import TodoDetails from "@/components/todo-details/todo-details";
+import NewTaskButton from "@/components/new-task-button/new-task-button";
 
 export default function Home() {
   return (
@@ -15,8 +15,13 @@ export default function Home() {
       <div className="todo-list-app-container">
         <div className="main-container">
           <div className="main-tools-container">
-            <Logo />
-            <DatePicker />
+            <div className="logo">
+              <Logo />
+            </div>
+            <div className="tools">
+              <DatePicker />
+              <NewTaskButton />
+            </div>
           </div>
 
           <div className="todo-list-container">
@@ -29,13 +34,8 @@ export default function Home() {
             <Profile />
           </div>
 
-          <div className="todo-list-details-container">
-            <div className="todo-list-details">
-              <div className="details-container"></div>
-              <div className="save-button-container">
-                <SaveButton />
-              </div>
-            </div>
+          <div className="todo-details-container">
+            <TodoDetails />
           </div>
         </div>
       </div>

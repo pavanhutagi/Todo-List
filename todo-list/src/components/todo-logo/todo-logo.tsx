@@ -1,13 +1,10 @@
 import "./styles.css";
-import { FcInspection } from "react-icons/fc";
 
-export default function Logo() {
+export default function TodoLogo() {
   return (
     <>
       <div className="logo-container">
-        <div className="logo-icon">
-          <FcInspection />
-        </div>
+        <div className="logo-icon"></div>
         <div className="logo-text">Todo List</div>
       </div>
     </>

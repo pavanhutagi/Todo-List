@@ -7,7 +7,6 @@ export default function NewTaskButton() {
     <>
       <div className="new-task-button">
         <MdAddCircle className="new-task-icon" />
-        <div className="new-task-text">New Task</div>
       </div>
     </>
   );
