@@ -1,5 +1,3 @@
-"use client";
-
 import "./styles.css";
 
 import DatePicker from "@/components/date-picker/date-picker";

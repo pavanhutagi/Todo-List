@@ -7,3 +7,82 @@
   flex-direction: column;
   padding: 20px;
 }
+
+.details-container {
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form-elements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.task-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-description label {
+  font-size: 14pt;
+}
+
+.task-description textarea {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.created-on {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.created-on label {
+  font-size: 14pt;
+}
+
+.created-on input {
+  height: 50px;
+  width: 275px;
+  border-radius: 25px;
+}
+
+.due-by {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.due-by label {
+  font-size: 14pt;
+}
+
+.due-by input {
+  height: 50px;
+  width: 275px;
+  border-radius: 25px;
+}
+
+.save-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-button {
+  background-color: #4285f4;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  font-size: 14pt;
+}
