@@ -1,19 +1,12 @@
-.new-task-button {
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
 .new-task-icon {
   width: 60px;
   height: 60px;
   color: #4285f4;
   background-color: aliceblue;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.new-task-text {
-  margin-left: 10px;
-  font-size: 14pt;
+.new-task-icon:hover {
+  color: #5893f2;
 }

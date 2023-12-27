@@ -5,9 +5,7 @@ import { MdAddCircle } from "react-icons/md";
 export default function NewTaskButton() {
   return (
     <>
-      <div className="new-task-button">
-        <MdAddCircle className="new-task-icon" />
-      </div>
+      <MdAddCircle className="new-task-icon" />
     </>
   );
 }

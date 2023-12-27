@@ -23,9 +23,19 @@ export default function TodoDetails() {
                 <br />
                 <textarea
                   id="task-description"
-                  rows={5}
+                  rows={10}
                   value={taskDescription}
                   onChange={(event) => setTaskDescription(event.target.value)}
+                />
+              </div>
+
+              <div className="due-by">
+                <label htmlFor="due-by">Due By:</label>
+                <input
+                  type="date"
+                  id="due-by"
+                  value={dueBy}
+                  onChange={(event) => setDueBy(event.target.value)}
                 />
               </div>
 
@@ -37,16 +47,6 @@ export default function TodoDetails() {
                   id="created-on"
                   value={createdOn}
                   onChange={(event) => setCreatedOn(event.target.value)}
-                />
-              </div>
-
-              <div className="due-by">
-                <label htmlFor="due-by">Due By:</label>
-                <input
-                  type="date"
-                  id="due-by"
-                  value={dueBy}
-                  onChange={(event) => setDueBy(event.target.value)}
                 />
               </div>
             </div>

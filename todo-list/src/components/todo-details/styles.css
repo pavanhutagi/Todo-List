@@ -86,3 +86,7 @@
   color: white;
   font-size: 14pt;
 }
+
+.save-button:hover {
+  background-color: #5893f2;
+}

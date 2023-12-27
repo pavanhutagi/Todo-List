@@ -8,3 +8,7 @@
   align-items: center;
   cursor: pointer;
 }
+
+.profile:hover {
+  background-color: #4285f4;
+}
