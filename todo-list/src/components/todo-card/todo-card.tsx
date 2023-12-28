@@ -1,14 +1,35 @@
-import "./styles.css";
-import { MdOutlineRemoveCircle, MdCheckCircle } from "react-icons/md";
+"use client";
 
-export default function TodoCard() {
+import "./styles.css";
+
+import { MdOutlineRemoveCircle, MdCheckCircle } from "react-icons/md";
+import { useState } from "react";
+
+interface ToDoList {
+  id: number;
+  description: string;
+  createdOn: string;
+  dueBy: string;
+  status: string;
+}
+interface Props {
+  toDoList: ToDoList;
+}
+
+export default function TodoCard({ toDoList }: Props) {
+  const [isChecked, setIsChecked] = useState(
+    toDoList.status == "completed" ? true : false
+  );
+
   return (
     <>
-      <div className="todo-card">
-        <div className="check">
-          {/* <MdCheckCircle className="check-icon" /> */}
+      <div className={`todo-card ${toDoList.status}`}>
+        <div className="check" onClick={() => setIsChecked(!isChecked)}>
+          {isChecked ? <MdCheckCircle /> : <></>}
         </div>
-        <div className="description">Finish building portfolio</div>
+
+        <div className="description">{toDoList.description}</div>
+
         <div className="remove">
           <MdOutlineRemoveCircle />
         </div>

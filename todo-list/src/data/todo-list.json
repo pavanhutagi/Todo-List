@@ -2,31 +2,31 @@
   "todos": [
     {
       "id": 1,
-      "description": "Task Description",
+      "description": "Test 1",
       "createdOn": "2022-01-01",
       "dueBy": "2022-01-31",
-      "completed": false
+      "status": "pending"
     },
     {
       "id": 2,
-      "description": "Task Description",
+      "description": "Test 2",
       "createdOn": "2022-01-01",
       "dueBy": "2022-01-31",
-      "completed": false
+      "status": "delayed"
     },
     {
       "id": 3,
-      "description": "Task Description",
+      "description": "Test 3",
       "createdOn": "2022-01-01",
       "dueBy": "2022-01-31",
-      "completed": false
+      "status": "urgent"
     },
     {
       "id": 4,
-      "description": "Another Task Description",
+      "description": "Test 4",
       "createdOn": "2022-02-01",
       "dueBy": "2022-02-28",
-      "completed": true
+      "status": "completed"
     }
   ]
 }

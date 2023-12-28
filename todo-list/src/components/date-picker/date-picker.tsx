@@ -1,10 +1,16 @@
 "use client";
 
+import "./styles.css";
+
 import { Datepicker } from "flowbite-react";
+import { useDispatch } from "react-redux";
+import { selectedDateAction } from "@/store/slices/commonSlice";
 
 export default function DatePicker() {
+  const dispatch = useDispatch();
+
   const handleDateChange = (date: Date) => {
-    console.log("Date : " + date);
+    dispatch(selectedDateAction(date.toDateString()));
   };
 
   return (

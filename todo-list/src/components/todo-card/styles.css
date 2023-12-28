@@ -1,5 +1,5 @@
 .todo-card {
-  background-color: #fdaea9;
+  border: solid 2px rgb(76, 76, 76);
   border-radius: 25px;
   height: 100px;
   margin-bottom: 10px;
@@ -9,22 +9,54 @@
   cursor: pointer;
 }
 
+.todo-card:hover {
+  border: solid 2px rgb(255, 255, 255);
+}
+
+.todo-card.pending {
+  background-color: #aed6f1;
+}
+
+.todo-card.pending:hover {
+  background-color: #83bade;
+}
+
+.todo-card.delayed {
+  background-color: #fdaea9;
+}
+
+.todo-card.delayed:hover {
+  background-color: #eb7e77;
+}
+
+.todo-card.urgent {
+  background-color: #f0ca86;
+}
+
+.todo-card.urgent:hover {
+  background-color: #e3b461;
+}
+
+.todo-card.completed {
+  background-color: #9fe2bf;
+}
+
+.todo-card.completed:hover {
+  background-color: #6ad29c;
+}
+
 .check {
   background-color: white;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   margin-right: 20px;
+  font-size: 25px;
+  color: green;
 }
 
 .check:hover {
-  background-color: rgb(236, 236, 236);
-}
-
-.check-icon {
-  width: 25px;
-  height: 25px;
-  color: green;
+  background-color: rgb(215, 215, 215);
 }
 
 .description {
@@ -33,7 +65,7 @@
 }
 
 .remove {
-  font-size: 25pt;
+  font-size: 25px;
   color: #e34e4e;
   background-color: white;
   border-radius: 50%;

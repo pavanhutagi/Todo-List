@@ -1,6 +1,7 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Asap } from "next/font/google";
-import "./globals.css";
 
 const asap = Asap({ subsets: ["latin"] });
 
