@@ -22,6 +22,7 @@
 
 .todo-list-container {
   overflow-y: auto;
+  height: 100%;
 }
 
 .side-container {

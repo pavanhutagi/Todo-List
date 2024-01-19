@@ -1,5 +1,7 @@
 "use client";
 
+import "./styles.css";
+
 import TodoCard from "@/components/todo-card/todo-card";
 import ToDoListData from "@/data/todo-list.json";
 import { Dispatch, UnknownAction } from "redux";
@@ -10,6 +12,7 @@ import {
 } from "@/store/slices/toDoListSlice";
 import { selectSelectedDate } from "@/store/slices/commonSlice";
 import { useEffect } from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 interface ToDoList {
   id: number;
@@ -31,9 +34,23 @@ export default function ToDoList() {
 
   return (
     <>
-      {toListDataState?.map((toDoList: ToDoList) => (
-        <TodoCard key={toDoList.id} toDoList={toDoList} />
-      ))}
+      {toListDataState.length != 0 ? (
+        toListDataState?.map((toDoList: ToDoList) => (
+          <TodoCard key={toDoList.id} toDoList={toDoList} />
+        ))
+      ) : (
+        <div className="no-data-container">
+          <div className="message">
+            <Player
+              src="../data/no-data-lottie.json"
+              loop
+              autoplay
+              speed={10}
+            />
+            No tasks for today. <br /> Go ahead and add some.
+          </div>
+        </div>
+      )}
     </>
   );
 }
@@ -42,8 +59,13 @@ function getToDoListData(
   dispatch: Dispatch<UnknownAction>,
   selectedDateState: any
 ) {
-  console.log("Selected Date - ", selectedDateState);
-
   const toDoListData = JSON.parse(JSON.stringify(ToDoListData));
-  dispatch(toDoListDataAction(toDoListData.todos));
+
+  const filteredToDoListData = toDoListData.todos.filter(
+    (todo: ToDoList) =>
+      new Date(todo.createdOn).toDateString() ==
+      new Date(selectedDateState).toDateString()
+  );
+
+  dispatch(toDoListDataAction(filteredToDoListData));
 }
